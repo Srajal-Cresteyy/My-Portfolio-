@@ -50,8 +50,8 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. In ducimus numquam inventore nisi fugit assumenda odio mollitia repellendus adipisci. 
-            Perferendis ex sit dicta totam voluptatum, ea qui nam tempora voluptates?
+            Hello there ! I m Srajal Dwivedi a Computer Science Major from Pranveer Singh Institute of Technology Currently in 4th year of
+              my computer Science Engineering Stream .
           </p>
           <a href="#contacts" className='btn btn-primary'>Let's connect</a>
         </div>
