@@ -13,7 +13,7 @@ const data = [
     image: IMG1,
     title: 'My Portfolio',
     github: 'https://github.com',
-    demo: 'https://dribble.com'
+    demo: 'https://srajaldwivedi.onrender.com/'
   },
   {
     id:2,
@@ -55,7 +55,7 @@ const Portfolio = () => {
                 <h3>{title}</h3>
                 <div className="portfolio-item-cta">
                   <a href={github} className='btn'>Github</a>
-                  <a href={demo} className='btn btn-primary' >project</a>
+                  <a href={demo} className='btn btn-primary' target='_blank' >project</a>
                 </div>
               </article>
             )
