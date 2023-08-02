@@ -27,7 +27,7 @@ const data = [
     image: IMG3,
     title: 'The News Letter',
     github: 'https://github.com/Srajal-Cresteyy/NewsLetterProject',
-    demo: 'odd-flannel-shirt-dove.cyclic.app'
+    demo: 'https://odd-flannel-shirt-dove.cyclic.app'
   },
   {
     id:4,
