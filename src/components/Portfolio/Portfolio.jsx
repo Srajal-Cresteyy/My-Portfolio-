@@ -13,28 +13,28 @@ const data = [
     image: IMG1,
     title: 'My Portfolio',
     github: 'https://github.com',
-    demp: 'https://dribble.com'
+    demo: 'https://dribble.com'
   },
   {
     id:2,
     image: IMG2,
     title: 'Lets Journal',
     github: 'https://github.com/Srajal-Cresteyy/Lets-Journal',
-    demp: 'https://github.com/Srajal-Cresteyy/Lets-Journal'
+    demo: 'https://github.com/Srajal-Cresteyy/Lets-Journal'
   },
   {
     id:3,
     image: IMG3,
     title: 'The News Letter',
     github: 'https://github.com/Srajal-Cresteyy/NewsLetterProject',
-    demp: 'odd-flannel-shirt-dove.cyclic.app'
+    demo: 'odd-flannel-shirt-dove.cyclic.app'
   },
   {
     id:4,
     image: IMG4,
     title: 'The ToDO',
     github: 'https://github.com/Srajal-Cresteyy/The-ToDo',
-    demp: 'https://github.com/Srajal-Cresteyy/The-ToDo'
+    demo: 'https://github.com/Srajal-Cresteyy/The-ToDo'
   },
 ]
 
@@ -55,7 +55,7 @@ const Portfolio = () => {
                 <h3>{title}</h3>
                 <div className="portfolio-item-cta">
                   <a href={github} className='btn'>Github</a>
-                  <a href={demp} className='btn btn-primary' >project</a>
+                  <a href={demo} className='btn btn-primary' >project</a>
                 </div>
               </article>
             )
