@@ -2,7 +2,7 @@ import React from 'react'
 import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
 import {BsLinkedin} from 'react-icons/bs'
-import { BsWhatsapp } from 'react-icons/bs'
+// import { BsWhatsapp } from 'react-icons/bs'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com'
 
@@ -39,12 +39,12 @@ const Contacts = () => {
             <h5>Srajal Dwivedi</h5>
             <a href="https://www.linkedin.com/in/srajal-dwivedi-7275641b2/">Send Request</a>
           </article>
-          <article className='contact_option'>
+{/*           <article className='contact_option'>
             <BsWhatsapp className='contact_option-icon'/>
             <h4>WhatsApp</h4>
             <h5>+918173090637</h5>
             <a href="https://api.whatsapp.com/send?phone+918173090637">Send Message</a>
-          </article>
+          </article> */}
         </div>
         {/* End of Contact Options */}
         <form ref={form} onSubmit={sendEmail}>
