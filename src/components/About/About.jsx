@@ -25,7 +25,7 @@ const About = () => {
                 Experience
               </h5>
               <small>
-                Fresher
+                Assistant Software Engineer - Nucleus Software Exports | Feb 2024 - Present
               </small>
             </article>
 
