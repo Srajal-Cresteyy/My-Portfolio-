@@ -62,29 +62,36 @@ const Experience = () => {
             <article className='experience_details'>
               <BsPatchCheckFill className='experience_details-icon'/>
               <div>
-                <h4>Node JS</h4>
-                <small className='text-light'>Begginer</small>
+                <h4>Core Java</h4>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className='experience_details'>
               <BsPatchCheckFill className='experience_details-icon'/>
               <div>
-                <h4>MongoDB</h4>
-                <small className='text-light'>Begginer</small>
+                <h4>Spring FrameWork</h4>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className='experience_details'>
               <BsPatchCheckFill className='experience_details-icon'/>
               <div>
-                <h4>ExpressJS</h4>
-                <small className='text-light'>Begginer</small>
+                <h4>SQL</h4>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className='experience_details'>
               <BsPatchCheckFill className='experience_details-icon'/>
               <div>
-                <h4>Mongoose</h4>
-                <small className='text-light'>Begginer</small>
+                <h4>Hibernate</h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill className='experience_details-icon'/>
+              <div>
+                <h4>JUnit Test</h4>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
           </div>
