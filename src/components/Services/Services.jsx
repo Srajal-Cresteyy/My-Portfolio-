@@ -4,87 +4,117 @@ import { BiCheck } from 'react-icons/bi'
 
 const Services = () => {
   return (
-    <section id='services'>
-      <h5>Know More</h5>
-      <h2 className='cen'>About Me</h2>
+    <section id="services">
+      <h5 className="sub-heading">Know More</h5>
+      <h2 className="cen">About Me</h2>
 
       <div className="container services_container">
-        <article className='service'>
+        <article className="service">
           <div className="service_head">
             <h3>Education</h3>
           </div>
 
-          <ul className='service_list'>
+          <ul className="service_list">
             <li>
-              <BiCheck className='service_list-icon sz'/>
+              <BiCheck className="service_list-icon sz" />
               {/* <p>College : BTech CSE : 2024</p> */}
-              <p>BTech CSE : 2024 <br /> Pranveer Singh Institute of Technology</p>
+              <p>
+                <strong>BTech CSE : 2024</strong>
+                <br /> <span>Pranveer Singh Institute of Technology</span>
+              </p>
             </li>
             <li>
-              <BiCheck className='service_list-icon sz'/>
+              <BiCheck className="service_list-icon sz" />
               {/* <p>College : DE Electronics & Comm : 2021 </p> */}
-              <p>DE Electronics & Comm : 2021 <br/> Manyawar Kanshiram Govt. Polytechnic</p>
+              <p>
+                <strong>DE Electronics & Comm : 2021</strong>
+                <br /> <span>Manyawar Kanshiram Govt. Polytechnic</span>
+              </p>
             </li>
             <li>
-              <BiCheck className='service_list-icon'/>
+              <BiCheck className="service_list-icon" />
               {/* <p>High School : 2018 </p> */}
-              <p>High School : 2018 <br/> Mercy Memorial School</p>
+              <p>
+                <strong>High School : 2018</strong>
+                <br />
+                <span>Mercy Memorial School</span>
+              </p>
             </li>
           </ul>
         </article>
         {/* End of Education */}
-        <article className='service'>
+        <article className="service">
           <div className="service_head">
-            <h3>Interests</h3>
+            <h3>Work Experience</h3>
           </div>
 
-          <ul className='service_list'>
+          <ul className="service_list">
             <li>
-              <BiCheck className='service_list-icon'/>
-              <p>FrontEnd Development</p>
+              <BiCheck className="service_list-icon sz" />
+              <p>
+                <strong>Accenture</strong> | <span>29'SEP'24 - Present</span>
+                <br />
+                <span className="description">
+                  - Assisted in developing and testing JavaEE software.
+                </span>
+                <br />
+                <span className="description">
+                  - Worked with senior engineers across the SDLC, from design to
+                  unit testing.
+                </span>
+              </p>
             </li>
             <li>
-              <BiCheck className='service_list-icon'/>
-              <p>Backend Development </p>
-            </li>
-            <li>
-              <BiCheck className='service_list-icon'/>
-              <p>Data Structures & Algorithms</p>
-            </li>
-            <li>
-              <BiCheck className='service_list-icon'/>
-              <p>Video Editing</p>
-            </li>
-            <li>
-              <BiCheck className='service_list-icon'/>
-              <p>Graphic Design</p>
+              <BiCheck className="service_list-icon sz" />
+              <p>
+                <strong>Nucleus Software Exports</strong> |{' '}
+                <span>05'FEB'24 - 19'SEP'24</span>
+                <br />
+                <strong>FinnOneNeo-Training Version:</strong>
+                <br />
+                <span className="description">
+                  - Optimized data retrieval & enhanced the Deviation Module API
+                  in CAS.
+                </span>
+                <br />
+                <span className="description">
+                  - Collaborated for seamless FinnOneNeo CAS integration.
+                </span>
+              </p>
             </li>
           </ul>
         </article>
 
         {/* End of Interest */}
 
-        <article className='service'>
+        <article className="service">
           <div className="service_head">
-            <h3>Certifications</h3>
+            <h3>Achievements</h3>
           </div>
 
-          <ul className='service_list'>
+          <ul className="service_list">
             <li>
-              <BiCheck className='service_list-icon'/>
-              <p><a href="https://www.hackerrank.com/certificates/3bb00a921053">Problem Solving : Hackerrank </a></p>
+              <BiCheck className="service_list-icon" />
+              <p>
+                <strong>LeetCode Rating : </strong> 1676 (Top 13%)
+              </p>
             </li>
             <li>
-              <BiCheck className='service_list-icon'/>
-              <p><a href="https://www.hackerrank.com/certificates/24adf1bed9bf">SQL : Hackerrank</a></p>
+              <BiCheck className="service_list-icon" />
+              <p>
+                <strong>Contest Rank : </strong>
+                1113 in Weekly Contest #333
+              </p>
             </li>
             <li>
-              <BiCheck className='service_list-icon'/>
-              <p><a href="https://www.udemy.com/certificate/UC-870586c1-fe96-40a1-ade5-81a09b02d613/">Web Dev BootCamp : Udemy : Angela Yu</a></p>
+              <BiCheck className="service_list-icon" />
+              <p>
+                <strong>Problem-Solving : </strong>
+                500+ LeetCode questions, 5★ on HackerRank
+              </p>
             </li>
           </ul>
         </article>
-
       </div>
     </section>
   )

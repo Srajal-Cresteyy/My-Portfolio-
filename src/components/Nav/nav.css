@@ -1,33 +1,136 @@
-nav{
-    background: rgba(0,0,0,0.3);
-    width: max-content;
-    display: block;
-    padding: 0.7rem 1.7rem;
-    z-index:2;
+nav {
+  /* background: var(--color-bg-variant);
+   */
+  background: rgba(0, 0, 0, 0.1); /* Semi-transparent black */
+  width: 70px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-radius: 0;
+  backdrop-filter: blur(15px);
+  transition: width 0.1s ease-in-out;
+  /* overflow: hidden; */
+}
+
+nav.expanded {
+  width: 200px;
+}
+nav a,
+.logout-btn {
+  background: transparent;
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  color: var(--color-light);
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  width: 100%;
+  justify-content: start;
+  gap: 1rem;
+  white-space: nowrap;
+  padding-left: 1.5rem;
+  font-size: small;
+}
+
+.icon {
+  font-size: x-large;
+}
+
+/* Rectangular hover effect */
+nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 1px; /* Ensures hover effect remains rectangular */
+}
+
+/* Rectangular active button */
+nav a.active {
+  background: var(--color-bg);
+  color: var(--color-white);
+  border-radius: 1px; /* Keeps active button rectangular */
+}
+
+.toggle-btn {
+  width: 100%;
+  text-align: left;
+  font-size: larger;
+  font-weight: bolder;
+  cursor: pointer;
+  color: var(--color-light);
+  padding: 1rem 1.5rem;
+  transition: all 0.3s ease-in-out;
+  background: var(--color-bg);
+}
+
+.toggle-btn:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 1px; /* Keeps active button rectangular */
+}
+
+/* Logout Button Styling */
+.logout-btn {
+  position: absolute;
+  bottom: 1rem;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    width: 40px;
+    height: 100vh;
     position: fixed;
-    left: 50%;
-    transform: translate(-50%);
-    bottom : 2rem;
-    display: flex;
-    gap: 0.8rem;
-    border-radius: 3rem;
-    backdrop-filter: blur(15px);
+  }
+
+  nav a {
+    padding: 15px;
+    justify-content: center;
+    font-size: small;
+  }
+
+  .icon {
+    font-size: x-small;
+  }
+
+  .toggle-btn {
+    display: none;
+  }
 }
 
-nav a{
-    background: transparent;
-    padding:0.9rem;
-    border-radius: 50%;
-    display: flex;
-    color: (--color-light);
-    font-size: 1.1rem;
-}
+@media (max-width: 480px) {
+  nav {
+    width: 100%;
+    height: 38px;
+    flex-direction: row;
+    align-items: center;
+    bottom: unset;
+    left: 0;
+    top: 0;
+  }
 
-nav a:hover{
-    background: rgba(0,0,0,0.3);
-}
+  nav a {
+    justify-content: center;
+    font-size: small;
+    padding: 15px;
+    width: 4rem;
+  }
 
-nav a.active{
-    background: var(--color-bg);
-    color: var(--color-white);
+  .icon {
+    font-size: small;
+  }
+
+  .logout-btn {
+    position: static;
+    align-items: right;
+    /* padding-left: 180px;
+    */
+    justify-content: end;
+    padding-right: 60px;
+  }
 }

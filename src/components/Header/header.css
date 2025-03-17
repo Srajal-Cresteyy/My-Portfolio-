@@ -1,84 +1,165 @@
-header{
-    height: 100vh;
-    padding-top: 7rem;
-    overflow: hidden;
+header {
+  height: 100vh;
+  padding-top: 15rem;
+  padding-bottom: 0;
+  overflow: hidden;
 }
 
-.header_container{
-    text-align: center;
-    height: 100%;
-    position: relative;
+.header_container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+  width: 100vh;
+  margin-left: 1rem;
+}
+
+.heading-name {
+  font-size: 6rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0.5px;
+  margin-left: 7rem;
+}
+
+.heading-hello {
+  font-size: medium;
+  /* margin-left: 5rem; */
 }
 
 /* =============================== CTA =================================== */
 
-.cta{
-    margin-top: 2.5rem;
-    display: flex;
-    gap: 1.2rem;
-    justify-content: center;
+.cta {
+  /* margin-top: rem; */
+  display: flex;
+  gap: 2.2rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  /* margin-left: 0.5rem; */
+  margin-right: 26px;
 }
 
 /* =============================== SOCIALS =================================== */
 
-.header_socials{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:0.8rem;
-    position: absolute;
-    left: 0;
-    bottom: 3rem;
+.header_socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  /* left: 0; */
+  right: -0.09rem;
+  bottom: 28px;
 }
-
-.header_socials::after {
-    content: "";
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
-}
-
-/* =========================== ME ===================================== */
-
-.me{
-    background: linear-gradient(var(--color-primary),transparent);
-    width: 22rem;
-    height: 30rem;
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
-    overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
-}
-
 
 /* =========================== Sroll Down ===================================== */
-.scroll_down{
-    position: absolute;
-    right: -2.5rem;
-    bottom:  5rem;
-    transform: rotate(90deg);
-    font-weight: 300;
-    font-size: 0.9rem;
+.scroll_down {
+  position: absolute;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
 }
 
 /* =========================== Medium Devices(Media Query) ===================================== */
 
-@media screen  and (max-width: 1024px) {
-    header{
-        height: 68vh;
+@media screen and (max-width: 1024px) {
+  header {
+    height: 100vh;
+  }
+  .header_container {
+    text-align: center;
+    height: 105%;
+    position: relative;
+    width: 100vh;
+    margin-left: 1rem;
+  }
 
-    }
+  .heading-name {
+    font-size: 5rem;
+  }
+
+  .heading-hello {
+    font-size: medium;
+  }
+
+  .cta {
+    /* margin-top: rem; */
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+    /* margin-left: 0.5rem; */
+    margin-right: 11px;
+  }
 }
 /* =========================== small Devices(Media Query) ===================================== */
 
-@media screen  and (max-width: 600px) {
-    header{
-        height: 100vh;
-    }
+@media screen and (max-width: 779px) {
+  header {
+    height: 100vh;
+  }
 
-    .header_socials, .scroll_down{
-        display: none;
-    }
+  .header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    width: 100vh;
+    margin-left: 1rem;
+  }
+
+  .heading-name {
+    font-size: 3rem;
+    margin-left: 2rem;
+  }
+
+  .heading-hello {
+    font-size: medium;
+  }
+
+  .header_socials {
+    right: -0.01rem;
+    margin-right: 1rem;
+  }
+
+  .cta {
+    margin-right: 4rem;
+  }
+
+  .btn {
+    padding: 0.05rem 0.2rem;
+    font-size: x-small;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    height: 100vh;
+  }
+
+  .header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    width: 100vh;
+    margin-left: 1rem;
+  }
+
+  .heading-name {
+    font-size: 4rem;
+    margin-left: 1rem;
+  }
+
+  .header_socials {
+    right: -0.01rem;
+    margin-right: 1rem;
+  }
+
+  .cta {
+    margin-right: 0.5rem;
+  }
+
+  .btn {
+    padding: 2px 5px;
+    font-size: 10px;
+  }
 }
