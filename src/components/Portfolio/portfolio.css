@@ -1,17 +1,22 @@
-.cen {
+.cen-portfolio {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .sub-heading {
   margin-bottom: 0;
-  padding-top: 8rem;
+  padding-top: 5rem;
 }
 
 .portfolio_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  gap: 3rem;
+}
+
+.swiper,
+.swiper-wrapper {
+  overflow: visible;
 }
 
 .portfolio_item {
@@ -29,6 +34,16 @@
 .portfolio_item-image {
   border-radius: 1.5rem;
   overflow: hidden;
+  width: 100%;
+  max-width: 480px; /* ensures it doesn't exceed 480px */
+  aspect-ratio: 4 / 3; /* maintains the 4:3 ratio */
+  position: relative;
+}
+
+.portfolio_item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .portfolio_item h3 {
@@ -44,8 +59,18 @@
 /* =========================== Medium Devices(Media Query) ===================================== */
 
 @media screen and (max-width: 1024px) {
+  .cen-portfolio {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .sub-heading {
+    margin-bottom: 0;
+    padding-top: 5rem;
+    margin-left: 1rem;
+  }
   .portfolio_container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1.2rem;
   }
 }

@@ -29,6 +29,7 @@ const Nav = () => {
         href="#"
         onClick={() => setActiveNav('#')}
         className={activeNav === '#' ? 'active' : ''}
+        title="Home"
       >
         <AiOutlineHome className="icon" />
         {isExpanded && <span>Home</span>}
@@ -37,6 +38,7 @@ const Nav = () => {
         href="#about"
         onClick={() => setActiveNav('#about')}
         className={activeNav === '#about' ? 'active' : ''}
+        title="About"
       >
         <AiOutlineUser className="icon" />
         {isExpanded && <span>About</span>}
@@ -45,23 +47,26 @@ const Nav = () => {
         href="#experience"
         onClick={() => setActiveNav('#experience')}
         className={activeNav === '#experience' ? 'active' : ''}
+        title="Skills"
       >
         <BiBook className="icon" />
-        {isExpanded && <span>Experience</span>}
+        {isExpanded && <span>Skills</span>}
       </a>
       <a
         href="#services"
         onClick={() => setActiveNav('#services')}
         className={activeNav === '#services' ? 'active' : ''}
+        title="Experience"
       >
         <RiServiceLine className="icon" />
-        {isExpanded && <span>Services</span>}
+        {isExpanded && <span>Experience</span>}
       </a>
 
       <a
         href="#portfolio"
         onClick={() => setActiveNav('#portfolio')}
         className={activeNav === '#portfolio' ? 'active' : ''}
+        title="Projects"
       >
         <RiProjector2Line className="icon" />
         {isExpanded && <span>Projects</span>}
@@ -71,6 +76,7 @@ const Nav = () => {
         href="#section"
         onClick={() => setActiveNav('#section')}
         className={activeNav === '#section' ? 'active' : ''}
+        title="Quick Links"
       >
         <RiChatQuoteLine className="icon" />
         {isExpanded && <span>Quick Links</span>}
@@ -80,13 +86,14 @@ const Nav = () => {
         href="#contacts"
         onClick={() => setActiveNav('#contacts')}
         className={activeNav === '#contacts' ? 'active' : ''}
+        title="Contact"
       >
         <BiMessageSquareDetail className="icon" />
-        {isExpanded && <span>Contacts</span>}
+        {isExpanded && <span>Contact</span>}
       </a>
       <div className="logout-btn">
         <BiLogOut className="icon" />
-        {isExpanded && <span>Logout</span>}
+        {isExpanded && <span>Back to Top</span>}
       </div>
     </nav>
   )

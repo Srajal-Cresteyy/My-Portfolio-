@@ -40,6 +40,17 @@ nav a,
   font-size: small;
 }
 
+/* extra starts here */
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px dotted #666;
+  text-align: left;
+}
+
+/* ends here */
+
 .icon {
   font-size: x-large;
 }
@@ -117,7 +128,7 @@ nav a.active {
   nav a {
     justify-content: center;
     font-size: small;
-    padding: 15px;
+    padding: 5px;
     width: 4rem;
   }
 
